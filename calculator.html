@@ -5,12 +5,14 @@
 <meta charset="utf-8">
 <script type="text/javascript">
 
-function square() {
+function square() 
+{
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 2);
 }
 
-function cube() {
+function cube() 
+{
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 3);
 }
@@ -25,6 +27,11 @@ function elevadoacuatro()
 {
 	var num = document.getElementById("n1");
   	num.value = Math.pow(num.value, 4);
+
+function inverse() 
+{
+  var num = document.getElementById("n1");
+  num.value = 1/num.value;
 }
 
 </script>
@@ -37,9 +44,11 @@ function elevadoacuatro()
 	<button onclick="square()"> x<sup>2</sup> </button>
   	<button onclick="cube()"> x<sup>3</sup> </button>
 
+	<button onclick="elevadoacuatro()"> x<sup>4</sup> </button>
+
 	<button onclick="seno()"> Seno(x) </button>
 
-	<button onclick="elevadoacuatro()"> x<sup>4</sup> </button>
+	<button onclick="inverse()"> 1/x </button>
   </p>
 </body>
 </html>
